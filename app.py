@@ -48,23 +48,23 @@ COURSE_CATALOG = [
 # 3. HORÁRIOS
 # =============================================================================
 SCHEDULE_OPTIONS = {
-    "1": {"dias_aula": "Quarta a Terça", "horario": "18h até 21h"},
-    "2": {"dias_aula": "Sexta",          "horario": "18h até 20h"},
-    "3": {"dias_aula": "Segunda",        "horario": "18h até 20h"},
+    "1": {"dias_aula": "Segunda a Sexta", "horario": "18h até 21h"},  # DSBR04 - dias atualizado
+    "2": {"dias_aula": "Sexta",           "horario": "18h até 20h"},  # OFDN01 - inalterado
+    "3": {"dias_aula": "Segunda",         "horario": "18h até 20h"},  # OFDN02 - inalterado
 }
 
 # =============================================================================
 # 4-5. DATAS
 # =============================================================================
 START_DATE_OPTIONS = {
-    "1": "17/06/2026",
-    "2": "19/06/2026",
-    "3": "29/06/2026",
+    "1": "22/06/2026",  # DSBR04 - atualizado (era 17/06)
+    "2": "19/06/2026",  # OFDN01 - inalterado
+    "3": "29/06/2026",  # OFDN02 - inalterado
 }
 END_DATE_OPTIONS = {
-    "1": "23/06/2026",
-    "2": "19/06/2026",
-    "3": "29/06/2026",
+    "1": "26/06/2026",  # DSBR04 - atualizado (era 23/06)
+    "2": "19/06/2026",  # OFDN01 - inalterado
+    "3": "29/06/2026",  # OFDN02 - inalterado
 }
 
 # =============================================================================
