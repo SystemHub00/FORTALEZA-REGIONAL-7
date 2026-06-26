@@ -40,31 +40,24 @@ LOCAL_OPTIONS = [
 # =============================================================================
 COURSE_CATALOG = [
     {"id": "1", "nome": "26/DSBR 04 - DESIGNER DE SOBRANCELHAS"},
-    {"id": "2", "nome": "26/OFDN 01 - OFICINA DE DANÇA (SÃO JOÃO)"},
-    {"id": "3", "nome": "26/OFDN 02 - OFICINA DE DANÇA (SÃO JOÃO)"},
 ]
 
 # =============================================================================
 # 3. HORÁRIOS
 # =============================================================================
 SCHEDULE_OPTIONS = {
-    "1": {"dias_aula": "Segunda a Sexta", "horario": "18h até 21h"},  # DSBR04 - dias atualizado
-    "2": {"dias_aula": "Sexta",           "horario": "18h até 20h"},  # OFDN01 - inalterado
-    "3": {"dias_aula": "Segunda",         "horario": "18h até 20h"},  # OFDN02 - inalterado
+    "1": {"dias_aula": "Segunda a Sexta", "horario": "18h até 21h"},
 }
 
 # =============================================================================
 # 4-5. DATAS
 # =============================================================================
 START_DATE_OPTIONS = {
-    "1": "22/06/2026",  # DSBR04 - atualizado (era 17/06)
-    "2": "19/06/2026",  # OFDN01 - inalterado
-    "3": "29/06/2026",  # OFDN02 - inalterado
+    "1": "22/06/2026",
 }
+
 END_DATE_OPTIONS = {
-    "1": "26/06/2026",  # DSBR04 - atualizado (era 23/06)
-    "2": "19/06/2026",  # OFDN01 - inalterado
-    "3": "29/06/2026",  # OFDN02 - inalterado
+    "1": "26/06/2026",
 }
 
 # =============================================================================
@@ -79,28 +72,21 @@ ADDRESS_OPTIONS = {
 # =============================================================================
 TURMA_OPTIONS = [
     {
-        "id": "1", "curso_id": "1", "local_id": "1",
+        "id": "1",
+        "curso_id": "1",
+        "local_id": "1",
         "turma_codigo": "26/DSBR-04",
-        "agenda_id": "1", "periodo_id": "1",
-        "encerramento_id": "1", "endereco_id": "1",
-    },
-    {
-        "id": "2", "curso_id": "2", "local_id": "1",
-        "turma_codigo": "26/OFDN-01",
-        "agenda_id": "2", "periodo_id": "2",
-        "encerramento_id": "2", "endereco_id": "1",
-    },
-    {
-        "id": "3", "curso_id": "3", "local_id": "1",
-        "turma_codigo": "26/OFDN-02",
-        "agenda_id": "3", "periodo_id": "3",
-        "encerramento_id": "3", "endereco_id": "1",
+        "agenda_id": "1",
+        "periodo_id": "1",
+        "encerramento_id": "1",
+        "endereco_id": "1",
     },
 ]
 
 # =============================================================================
 # 8. FUNÇÕES AUXILIARES
 # =============================================================================
+
 def build_course_options():
     local_by_id  = {opt["id"]: opt for opt in LOCAL_OPTIONS}
     course_by_id = {opt["id"]: opt for opt in COURSE_CATALOG}
